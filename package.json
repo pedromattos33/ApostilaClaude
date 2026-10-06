@@ -1,0 +1,22 @@
+{
+  "name": "claude-na-pratica",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Apostila interativa independente sobre Claude Cowork e Claude Code",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "export:html": "node scripts/export-html.mjs",
+    "check": "node --check src/app.js && node --check src/content.js && node --check src/search.js && node --check server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "playwright": "^1.63.0"
+  }
+}
